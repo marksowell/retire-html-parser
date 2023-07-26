@@ -1,4 +1,5 @@
 import sys
+import re
 from bs4 import BeautifulSoup
 
 def parse_file(file_path):
@@ -39,8 +40,8 @@ def parse_file(file_path):
         # The third cell contains the location, but we need to exclude the vulnerability info
         location = cells[2].find(text=True, recursive=False).strip()
 
-        # Remove '____Vulnerability info:' from location and replace with 'Vulnerabilities:'
-        location = location.replace('____Vulnerability info:', '\nVulnerabilities:')
+        # Use regular expression to find and replace underscores before "Vulnerability info:"
+        location = re.sub(r'_+Vulnerability info:', '\nVulnerabilities:', location)
 
         print(f'\nLibrary: {library} (version: {version})')
         print(f'URL: {location}')
