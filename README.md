@@ -45,7 +45,7 @@ pip install beautifulsoup4
 5. Run the script using the following command:
 
 ```bash
-python retire_parser.py <filename>
+python retire_html_parser.py <filename>
 ```
 
 Replace <filename> with the path to the HTML file containing the Retire.js scan results.
