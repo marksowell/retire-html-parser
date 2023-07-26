@@ -40,7 +40,9 @@ pip install beautifulsoup4
 
 1. Clone or download this repository to your local machine.
 2. Open a terminal or command prompt and navigate to the directory where you saved the script.
-3. Run the script using the following command:
+3. Save the report:
+![Save report](images/save_report.png)
+5. Run the script using the following command:
 
 ```bash
 python retire_parser.py <filename>
