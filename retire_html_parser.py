@@ -52,7 +52,10 @@ def parse_file(file_path):
 
         for info_row in vul_info_rows:
             severity = info_row.find_all('td')[0].get_text(strip=True).capitalize()
-            description = info_row.find_all('td')[1].get_text(strip=True)
+
+            # Remove "GHSA-*" and any following characters from the description
+            description = re.sub(r'GHSA-.*', '', info_row.find_all('td')[1].get_text(strip=True))
+
             print(f'{severity} - {description}')
 
 if __name__ == '__main__':
