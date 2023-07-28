@@ -58,17 +58,17 @@ Here is an example of how the output of the script will look:
 Library: jquery-ui (version: 1.12.1)
 URL: Found in https://code.jquery.com/ui/1.12.1/jquery-ui.min.js
 Vulnerabilities:
-Medium - XSS when refreshing checkboxes if user-controlled data in labels 2101 CVE-2022-31160 GHSA-h6gj-6jjq-h8g9
-Medium - CVE-2021-41184 XSS in the `of` option of the `.position()` util GHSA-gpqq-952q-5327
-Medium - CVE-2021-41183 15284 XSS Vulnerability on text options of jQuery UI datepicker GHSA-j7qv-pgf6-hvh4
-Medium - CVE-2021-41182 XSS in the `altField` option of the Datepicker widget GHSA-9gj3-hwp5-pmwc
-Medium - CVE-2022-31160 XSS when refreshing a checkboxradio with an HTML-like initial text label GHSA-h6gj-6jjq-h8g9
+Medium - XSS when refreshing checkboxes if user-controlled data in labels 2101 CVE-2022-31160
+Medium - CVE-2021-41184 XSS in the `of` option of the `.position()` util
+Medium - CVE-2021-41183 15284 XSS Vulnerability on text options of jQuery UI datepicker
+Medium - CVE-2021-41182 XSS in the `altField` option of the Datepicker widget
+Medium - CVE-2022-31160 XSS when refreshing a checkboxradio with an HTML-like initial text label
 
 Library: jquery (version: 3.4.1.min)
 URL: Found in https://code.jquery.com/jquery-3.4.1.min.js
 Vulnerabilities:
-Medium - CVE-2020-11022 4642 Regex in its jQuery.htmlPrefilter sometimes may introduce XSS GHSA-gxr4-xjj5-5px2
-Medium - CVE-2020-11023 CVE-2020-23064 4647 passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code GHSA-jpcq-cgw6-v4j6
+Medium - CVE-2020-11022 4642 Regex in its jQuery.htmlPrefilter sometimes may introduce XSS
+Medium - CVE-2020-11023 CVE-2020-23064 4647 passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code
 ```
 
 ## License
